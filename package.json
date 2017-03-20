@@ -1,0 +1,26 @@
+{
+  "name": "ragsdale",
+  "version": "1.0.0",
+  "description": "Ragesdale Family Website www.ragsdale.us",
+  "main": "main.js",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bridgemanbc/ragsdale.git"
+  },
+  "author": "Bradford Bridgeman <bradford.bridgeman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bridgemanbc/ragsdale/issues"
+  },
+  "homepage": "https://github.com/bridgemanbc/ragsdale"
+}
