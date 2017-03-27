@@ -4,9 +4,11 @@
   "description": "Ragesdale Family Website www.ragsdale.us",
   "main": "main.js",
   "dependencies": {
-    "angular": "^1.6.3",
+    "angular": "^1.5.11",
+    "angular-route": "^1.6.3",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.0",
+    "nodemon": "^1.11.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {},
