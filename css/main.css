@@ -1,0 +1,26 @@
+.navigation-bar {
+	overflow: hidden;
+	background-color: #6d6661;
+	height: 95%;
+	width: 20%;
+	top: 5%;
+	position: absolute;
+}
+
+.main-body {
+	height: 95%;
+	width: 80%;
+	left: 20%;
+	top: 5%;
+	position: absolute;
+}
+
+.title-bar {
+	overflow: hidden;
+	background-color: #6d6661;
+	font-size: 30px;
+	text-align: center;
+	height: 5%;
+	width: 100%;
+	position: absolute;
+}
