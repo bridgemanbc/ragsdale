@@ -1,16 +1,10 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div id="navbar" class="navbar-collapse collapse">
-            <!-- <ul class="nav navbar-nav">
-                <li ng-class="tab === ''"><a href="#" ng-click="tab = ''">Home</a></li>
-                <li ng-class="tab === 'reunion'"><a href="#reunion" ng-click="tab = 'reunion'">Family Reunion</a></li>
-                <li ng-class="tab === 'contact'"><a href="#contact" ng-click="tab = 'contact'">Contact</a></li>
-            </ul> -->
             <ul class="nav navbar-nav">
-                <li><a href="#" ng-click="tab = ''">Home</a></li>
-                <!-- <li ng-class="tab === 'history'"><a href="#history" ng-click="tab = 'history'">Family History</a></li> -->
-                <li><a href="#reunion" ng-click="tab = 'reunion'">Family Reunion</a></li>
-                <li><a href="#contact" ng-click="tab = 'contact'">Contact</a></li>
+                <li ng-class="{active: tab === ''}"><a href="#" ng-click="tab = ''">Home</a></li>
+                <li ng-class="{active: tab === 'reunion'}""><a href="#reunion" ng-click="tab = 'reunion'">Family Reunion</a></li>
+                <li><a href="https://goo.gl/forms/MW3DgD8jMoWAoh2m1">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -18,9 +12,9 @@
 
 <div class="container">
     <div class="jumbotron">
-        <div ng-hide="tab">
+        <div ng-if="!tab">
             <h1>Welcome Ragsdale Family</h1>
-            <p>This is a site dedicated to serving our family, and providing information in a uniform place. While you are visiting, please take the time to <a href="#contact" ng-click="tab = 'contact'">update your contact information</a> so that we can maintain an accurate record for the entire family.</p>
+            <p>This is a site dedicated to serving our family, and providing information in a uniform place. While you are visiting, please take the time to <a href="https://goo.gl/forms/MW3DgD8jMoWAoh2m1">update your contact information</a> so that we can maintain an accurate record for the entire family.</p>
             <h3><a href="#reunion" ng-click="tab = 'reunion'">Click here for information regarding this years family reunion</a></h3>
         </div>
         <div ng-if="tab == 'history'">
@@ -28,9 +22,6 @@
         </div>
         <div ng-if="tab === 'reunion'">
             <reunion></reunion>
-        </div>
-        <div ng-show="tab === 'contact'" class="ng-hide">
-            <contact></contact>
         </div>
     </div>
 </div>
